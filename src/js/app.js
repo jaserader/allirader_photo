@@ -19,9 +19,12 @@ class App extends React.Component {
             </a>
           </div>
 
+          <hr></hr>
+          
           <nav>
             <ul>
               <a href=''>home</a>
+              <a href=''>portfolio</a>
               <a href=''>about</a>
               <a href=''>contact</a>
             </ul>
