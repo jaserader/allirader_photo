@@ -4,6 +4,7 @@
 
 $pink: #ECB3AE;
 $pink-hover: shade($pink, 20%);
+$white: #fff;
 
 * {
   box-sizing: border-box;
@@ -13,25 +14,27 @@ $pink-hover: shade($pink, 20%);
 
 #app{
   @include outer-container(100%);
+  background: $white;
 
   header{
     @include span-columns(12);
 
     .logo-container{
       @include span-columns(12);
-      text-align: center;
+      // text-align: center;
       // padding-top: 60px;
 
       a{
         @include span-columns(6);
         @include shift(3);
+        text-align: center;
 
         .custom-logo{
-          @include span-columns(12);
-          background-image: url("../img/logo2.png");
-          background-size: 100%;
-          background-repeat: no-repeat;
-          height: 200px;
+          height: 250px;
+          width: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
@@ -42,6 +45,7 @@ $pink-hover: shade($pink, 20%);
       ul{
         @include span-columns(12);
         text-align: center;
+        margin-top: none;
 
         a{
           display:inline-block;

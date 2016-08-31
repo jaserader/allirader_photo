@@ -15,7 +15,7 @@ class App extends React.Component {
         <header>
           <div className="logo-container">
             <a href="">
-              <img className="custom-logo"></img>
+              <img src="img/logo2.png" className="custom-logo"></img>
             </a>
           </div>
 
@@ -23,7 +23,6 @@ class App extends React.Component {
             <ul>
               <a href=''>home</a>
               <a href=''>about</a>
-              <a href=''>contact</a>
               <a href=''>contact</a>
             </ul>
           </nav>
