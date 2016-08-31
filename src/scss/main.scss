@@ -1,0 +1,67 @@
+@import "../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+  // $visual-grid: true;
+@import "../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+$pink: #ECB3AE;
+$pink-hover: shade($pink, 20%);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+#app{
+  @include outer-container(100%);
+
+  header{
+    @include span-columns(12);
+
+    .logo-container{
+      @include span-columns(12);
+      text-align: center;
+      // padding-top: 60px;
+
+      a{
+        @include span-columns(6);
+        @include shift(3);
+
+        .custom-logo{
+          @include span-columns(12);
+          background-image: url("../img/logo2.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          height: 200px;
+        }
+      }
+    }
+
+    nav{
+      @include span-columns(12);
+
+      ul{
+        @include span-columns(12);
+        text-align: center;
+
+        a{
+          display:inline-block;
+          width:auto;
+          float:none;
+          text-decoration: none;
+          padding: 5px 10px 5px 10px;
+          color: $pink;
+          font-size: 24px;
+
+          &:hover{
+            transition: all 0.35s;
+            color: $pink-hover;
+          }
+
+          &:first-of-type{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
