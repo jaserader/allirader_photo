@@ -24,6 +24,7 @@ class App extends React.Component {
               <a href=''>home</a>
               <a href=''>about</a>
               <a href=''>contact</a>
+              <a href=''>contact</a>
             </ul>
           </nav>
         </header>
