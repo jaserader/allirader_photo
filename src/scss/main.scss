@@ -53,6 +53,7 @@ body{
     position: fixed;
     bottom: 0;
     background: $white;
+    border-top: 1px solid $black;
 
     nav{
       @include span-columns(12);

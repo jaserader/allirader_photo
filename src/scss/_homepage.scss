@@ -2,9 +2,11 @@
 
 #mainpage{
   @include span-columns(12);
+  height: 100vh;
 
   .photo-container{
     @include span-columns(12);
+    margin-bottom: 10px;
 
     .row{
       @include span-columns(12);
@@ -28,6 +30,10 @@
           transition: all 0.35s;
           border-color: $pink-hover;
         }
+      }
+
+      &:last-of-type{
+        margin-bottom: 10px;
       }
     }
   }
