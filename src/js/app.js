@@ -15,23 +15,25 @@ class App extends React.Component {
         <header>
           <div className="logo-container">
             <a href="">
-              <img src="img/logo2.png" className="custom-logo"></img>
+              <img src="img/logo_photography.png" className="custom-logo"></img>
             </a>
           </div>
 
           <hr></hr>
-          
-          <nav>
-            <ul>
-              <a href=''>home</a>
-              <a href=''>portfolio</a>
-              <a href=''>about</a>
-              <a href=''>contact</a>
-            </ul>
-          </nav>
         </header>
 
         {this.props.children}
+
+        <footer>
+          <nav>
+            <ul>
+              <a href="" className="fa fa-instagram" aria-hidden="true"></a>
+              <a href="" className="fa fa-snapchat" aria-hidden="true"></a>
+              <a href="" className="fa fa-facebook" aria-hidden="true"></a>
+              <a href="" className="fa fa-twitter" aria-hidden="true"></a>
+            </ul>
+          </nav>
+        </footer>
       </div>
     )
   }

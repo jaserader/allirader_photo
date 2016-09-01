@@ -9,9 +9,22 @@ class Mainpage extends React.Component{
         <div id="mainpage">
           <div className="photo-container">
             <div className="row">
-              <div classname="photo1"></div>
-              <div classname="photo2"></div>
-              <div classname="photo3"></div>
+              <a href=""><img src="img/test_image.jpg" className="photo photo1"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo2"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
+            </div>
+            <div className="row">
+              <a href=""><img src="img/test_image.jpg" className="photo photo1"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo2"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
+            </div>
+            <div className="row">
+              <a href=""><img src="img/test_image.jpg" className="photo photo1"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo2"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
+              <a href=""><img src="img/test_image.jpg" className="photo photo3"></img></a>
             </div>
           </div>
         </div>

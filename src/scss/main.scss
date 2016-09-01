@@ -1,15 +1,17 @@
 @import "../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
-  // $visual-grid: true;
 @import "../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss";
 
-$pink: #ECB3AE;
-$pink-hover: shade($pink, 20%);
-$white: #fff;
+@import 'variables';
+@import 'homepage';
 
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
+}
+
+body{
+  margin: 0;
 }
 
 #app{
@@ -21,8 +23,7 @@ $white: #fff;
 
     .logo-container{
       @include span-columns(12);
-      // text-align: center;
-      // padding-top: 60px;
+      padding-top: 30px;
 
       a{
         @include span-columns(6);
@@ -30,7 +31,7 @@ $white: #fff;
         text-align: center;
 
         .custom-logo{
-          height: 250px;
+          height: 100px;
           width: auto;
           display: block;
           margin-left: auto;
@@ -42,19 +43,24 @@ $white: #fff;
     hr{
       @include span-columns(5);
       @include shift(3.5)
-      position: relative;
-      top: -50px;
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
+  }
+
+  footer{
+    @include span-columns(12);
+    position: fixed;
+    bottom: 0;
+    background: $white;
 
     nav{
       @include span-columns(12);
-      position: relative;
-      top: -50px;
 
       ul{
         @include span-columns(12);
-        text-align: center;
-        margin-top: none;
+        text-align: right;
+        padding-right: 60px;
 
         a{
           display:inline-block;
@@ -63,7 +69,7 @@ $white: #fff;
           text-decoration: none;
           padding: 0px 20px 0px 20px;
           color: $pink;
-          font-size: 24px;
+          font-size: 30px;
 
           &:hover{
             transition: all 0.35s;
