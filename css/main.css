@@ -1,0 +1,134 @@
+#mainpage {
+  height: 100vh; }
+  #mainpage .photo-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto; }
+    #mainpage .photo-container .row a {
+      height: auto; }
+      #mainpage .photo-container .row a:last-of-type {
+        margin-right: 0; }
+    #mainpage .photo-container .row .photo {
+      height: 225px;
+      width: auto;
+      border: 10px solid #fff; }
+      #mainpage .photo-container .row .photo:hover {
+        transition: all 0.35s;
+        border-color: #bd8f8b; }
+    #mainpage .photo-container .row:last-of-type {
+      margin-bottom: 10px; }
+
+@media screen and (max-width: 678px) {
+  #mainpage .photo-container .row .photo {
+    height: 180px; } }
+
+@media screen and (max-width: 542px) {
+  #mainpage .photo-container .row .photo {
+    height: 135px; } }
+
+@media screen and (max-width: 414px) {
+  #mainpage .photo-container {
+    max-width: 400px; }
+    #mainpage .photo-container .row .photo {
+      height: 120px; } }
+
+@media screen and (max-width: 362px) {
+  #mainpage .photo-container .row .photo {
+    height: 110px; } }
+
+@media screen and (max-width: 332px) {
+  #mainpage .photo-container .row .photo {
+    height: 100px; } }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200; }
+
+body {
+  margin: 0; }
+
+#app {
+  background: #fff; }
+  #app header .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    max-width: 900px;
+    margin: 0 auto; }
+    #app header .logo-container a .custom-logo {
+      height: 100px; }
+    #app header .logo-container .header-nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      margin-top: 15px;
+      border-bottom: 1px solid #C9C9C9;
+      padding-bottom: 5px;
+      margin-bottom: 20px; }
+      #app header .logo-container .header-nav a {
+        text-decoration: none;
+        color: #ECB3AE;
+        font-size: 20px; }
+        #app header .logo-container .header-nav a:hover {
+          transition: all 0.35s;
+          color: #bd8f8b; }
+  #app footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #C9C9C9; }
+    #app footer .footer-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end; }
+      #app footer .footer-container nav a {
+        display: inline-block;
+        width: auto;
+        float: none;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        color: #ECB3AE;
+        font-size: 30px; }
+        #app footer .footer-container nav a:hover {
+          transition: all 0.35s;
+          color: #bd8f8b; }
+        #app footer .footer-container nav a:first-of-type {
+          padding-left: 0; }
+
+@media screen and (max-width: 900px) {
+  #app header .logo-container {
+    max-width: 700px; } }
+
+@media screen and (max-width: 700px) {
+  #app header .logo-container {
+    max-width: 600px; } }
+
+@media screen and (max-width: 600px) {
+  #app header .logo-container {
+    max-width: 500px; } }
+
+@media screen and (max-width: 500px) {
+  #app header .logo-container {
+    max-width: 450px; } }
+
+@media screen and (max-width: 480px) {
+  #app header .logo-container a .custom-logo {
+    height: 75px; }
+  #app footer .footer-container {
+    justify-content: center; } }
+
+@media screen and (max-width: 414px) {
+  #app header .logo-container {
+    max-width: 400px; } }
+
+@media screen and (max-width: 480px) {
+  #app header .logo-container a .custom-logo {
+    height: 65px; } }
