@@ -1,19 +1,18 @@
 @import 'variables';
 
 #mainpage{
-  @include span-columns(12);
   height: 100vh;
 
   .photo-container{
-    @include span-columns(12);
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
 
     .row{
-      @include span-columns(12);
-      text-align: center;
-
       a{
-        margin-right: 10px;
         height: auto;
 
         &:last-of-type{

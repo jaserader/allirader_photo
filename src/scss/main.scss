@@ -15,60 +15,67 @@ body{
 }
 
 #app{
-  @include outer-container(100%);
   background: $white;
 
   header{
-    @include span-columns(12);
-
     .logo-container{
-      @include span-columns(12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding-top: 30px;
+      max-width: 900px;
+      margin: 0 auto;
 
       a{
-        @include span-columns(6);
-        @include shift(3.1);
-        text-align: center;
-
         .custom-logo{
           height: 100px;
-          width: auto;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
         }
       }
-    }
 
-    hr{
-      @include span-columns(5);
-      @include shift(3.5)
-      margin-top: 20px;
-      margin-bottom: 30px;
+      .header-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 15px;
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+
+        a{
+          text-decoration: none;
+          color: $pink;
+          font-size: 20px;
+
+          &:hover{
+            transition: all 0.35s;
+            color: $pink-hover;
+          }
+        }
+      }
     }
   }
 
   footer{
-    @include span-columns(12);
+    width: 100%;
     position: fixed;
     bottom: 0;
     background: $white;
-    border-top: 1px solid $black;
+    border-top: 3px solid $light-gray;
 
-    nav{
-      @include span-columns(12);
+    .footer-container{
+      max-width: 950px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
 
-      ul{
-        @include span-columns(12);
-        text-align: right;
-        padding-right: 60px;
-
+      nav{
         a{
           display:inline-block;
           width:auto;
           float:none;
           text-decoration: none;
-          padding: 0px 20px 0px 20px;
+          padding: 10px 20px 10px 20px;
           color: $pink;
           font-size: 30px;
 

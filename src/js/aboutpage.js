@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router";
 import $ from 'jquery';
 
-class Aboutpage extends React.Component{
+class About extends React.Component{
 
   render(){
     return(
@@ -13,4 +13,4 @@ class Aboutpage extends React.Component{
   }
 }
 
-export default Aboutpage;
+export default About;
